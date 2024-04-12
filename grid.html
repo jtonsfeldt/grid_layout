@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid Layout</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    <style>
+
+body {
+    display: grid;
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 300px auto 150px;
+    gap: 20px;
+
+    border: solid 1px green;
+
+    height: 100vh;
+    
+}
+
+body > * {background-color: coral;}
+
+header {
+    grid-column: span 3;
+    background-color: blue;
+}
+
+
+
+footer {grid-column:span 3;
+background-color:blueviolet}
+
+
+
+    
+    </style>
+
+    </head>
+    <body>
+
+<header> 
+    <h1>
+        David's Record Label 
+    </h1>
+</header>
+
+<nav>
+    Navigation
+</nav>
+
+<main> Main section 
+</main>
+
+<sidebar>
+    New Releases
+</sidebar>
+
+<footer>
+ Copyright 2024
+</Footer>
+
+
+    </body>
+</html>
